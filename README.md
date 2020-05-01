@@ -1,4 +1,4 @@
-nginx docker container 
+nginx and python containers 
 -------
-
-Python docker container from nginx 
+docker container with nginx  
+docker container from nginx container with Python proyect and the confing of nginx 
