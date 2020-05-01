@@ -1,5 +1,4 @@
-nginx container
-Python container from nginx 
+nginx docker container 
+-------
 
-
- 
+Python docker container from nginx 
