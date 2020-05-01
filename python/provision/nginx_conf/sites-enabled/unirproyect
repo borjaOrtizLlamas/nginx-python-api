@@ -1,0 +1,9 @@
+server {
+    listen 80;
+    server_name localhost localhost.con;
+
+    location / {
+        proxy_pass http://localhost:5000;
+    }
+}
+
