@@ -1,6 +1,6 @@
-FROM borjaortizllamas/nginx:latest as python
+FROM borjaortizllamas/nginx:1.0.0 as python
 MAINTAINER ortizllamasborja@gmail.com
-# installing python and supervisor
+# installing python 
 RUN DEBIAN_FRONTEND=nointeractive apt-get update -y --no-install-recommends && \
 apt-get install -y --no-install-recommends \
 python3-pip  \
@@ -23,5 +23,5 @@ COPY ./provision/nginx_conf/ /etc/nginx/
 COPY ./provision/supervisord.conf /etc/supervisor/conf.d/
 #script to run python script
 COPY ./provision/pythonExecute.sh /home/pythonExecute.sh
-
+VOLUME ["/home"]
 CMD ["/usr/bin/supervisord"]

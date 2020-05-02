@@ -1,0 +1,6 @@
+version: '3'
+services:
+  python_nginx: 
+    build: ./python
+    ports:
+      - "80:80"
