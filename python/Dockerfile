@@ -23,5 +23,4 @@ COPY ./provision/nginx_conf/ /etc/nginx/
 COPY ./provision/supervisord.conf /etc/supervisor/conf.d/
 #script to run python script
 COPY ./provision/pythonExecute.sh /home/pythonExecute.sh
-VOLUME ["/home"]
 CMD ["/usr/bin/supervisord"]
